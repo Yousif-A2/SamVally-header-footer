@@ -1,200 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samvalley</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>SamvalleyEN</title>
     <style>
-      /* Add CSS for right-to-left (RTL) layout and text alignment */
       body {
-          font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
       }
-      /* Add any other RTL-specific styles here */
-  </style>
-</head>
-<body>
-  <!--Top header-->
-    <div class="Header w-full h-[130px] pl-[66px] pr-[99px] py-[37px] bg-zinc-900 justify-start items-center gap-[215px] inline-flex">
-        <div class="Frame27787 justify-start items-center gap-20 flex">
-          <img class="White w-[184px] h-[42px]" src="img\Logo.png" />
-          <div class="SearchBar w-[538px] bg-white rounded-[28px] border border-zinc-900 justify-start items-center gap-1 flex">
-            <span class="material-symbols-outlined p-1" style="color:#828282;">
-                search
-                </span>
-            <input type="text" placeholder="What are you looking for?" class="w-full h-12 px-2 text-zinc-700 text-base font-normal  leading-normal rounded-[100px] border-none focus:outline-none" />
+    </style>
+  </head>
+  <body dir="">
+    <!--Top header-->
+    <section id="top-header" class="bg-zinc-900">
+      <div class="Header w-screen lg:h-[130px] md:h-[103px] md:flex hidden p-5 justify-between items-center lg:px-16">
+        <img class="White" src="img\Logo.png" />
+        <!--search bar-->
+        <div class="SearchBar max-w-lg grow bg-white rounded-[28px] border border-zinc-900">
+          <div class="flex items-center">
+            <span class="material-symbols-outlined p-1" style="color: #828282"> search </span>
+            <input
+              type="text"
+              placeholder="What are you looking for?"
+              class="h-12 s text-zinc-700 text-base font-normal leading-normal w-full rounded-[100px] border-none focus:outline-none"
+            />
           </div>
         </div>
-        <div class="Frame27351 justify-end items-center gap-[25px] flex">
-            <div class="Frame27813 justify-end items-center gap-5 flex">
-              <div class="Frame27785 w-12 h-6 relative">
-                
-                <a href="indexAr.html"> <!-- Replace "your-other-page.html" with the actual URL of the other page -->
-                  <div class="World w-10 flex left-3 gap-1 top-5px absolute text-white text-xs font-normal ">
-                    <div class="flex items-center">EN</div>
-                    <span class="material-symbols-outlined" style="color: white;">language</span>
-                  </div>
-                </a>
-                
-              </div>
-              <div class="Frame27350 justify-start items-start gap-6 flex">
-                <div class="ShoppingBag w-6 h-6 relative">
-                  <span class="material-symbols-outlined" style="color: white;">
-                    shopping_bag
-                  </span>
-                </div>
-                <div class="Person w-6 h-6 relative">
-                  <span class="material-symbols-outlined" style="color: white;">
-                    person
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-      </div>
-    </div>
-    </div>
-    </div>
-<!--Catagories header-->
-<div class="HeaderWeb w-full h-[92px] pl-[76px] pr-[66px] bg-zinc-800 flex-col justify-start items-end inline-flex">
-  <div class="CategoriesMenuBar self-stretch pr-[34px] py-5 justify-start items-center gap-2.5 inline-flex">
-    <div class="Frame27354 w-[163px] h-[52px] px-[30px] py-2.5 rounded-[30px] justify-center items-center gap-2.5 flex">
-      <div class="Frame w-6 h-6 relative"></div>
-      <div class="Categories flex  gap-2 text-white text-lg font-medium  leading-tight">
-        <img src="icons/Categories.svg">Categories</div>
-    </div>
-    <div class="Frame27356 w-[148px] px-[30px] py-2.5 rounded-[30px] justify-center items-center gap-2.5 flex">
-      <div class="TopSelling text-white text-lg font-medium  leading-tight">Top selling</div>
-    </div>
-    <div class="Frame27355 w-[111px] px-[30px] py-2.5 rounded-[30px] justify-center items-center gap-2.5 flex">
-      <div class="Offers text-white text-lg font-medium  leading-tight">Offers</div>
-    </div>
-    <div class="Frame27357 w-[124px] px-[30px] py-2.5 rounded-[30px] justify-center items-center gap-2.5 flex">
-      <div class="Grocery text-stone-50 text-lg font-medium  leading-tight">Grocery</div>
-    </div>
-  </div>
-</div>
 
+        <div class="flex gap-5">
+          <a href="indexAr.html" class="flex text-white gap-2">
+            <div class="flex items-center">EN</div>
+            <span class="material-symbols-outlined" style="color: white">language</span>
+          </a>
+          <span class="material-symbols-outlined" style="color: white">shopping_bag</span>
+          <span class="material-symbols-outlined" style="color: white">person</span>
+        </div>
+      </div>
+
+      <!--Mobile header-->
+      <div class="flex h-[56px] items-center justify-between px-2 md:hidden">
+        <div class="grow flex text-white gap-2 items-center">
+          <span class="material-symbols-outlined p-3"> menu </span>
+          <img class="White w-[94px] h-[21px]" src="img\Logo.png" />
+        </div>
+        <div class="flex items-center bg-white rounded-[28px] border w-[55px] h-[29px]">
+          <span class="material-symbols-outlined p-3" style="color: #1c1917"> search </span>
+          <input
+            type="text"
+            class="h-12 s text-zinc-700 text-base bg-transparent font-normal leading-normal w-full rounded-[100px] border-none focus:outline-none"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Catagories header-->
+    <section class="bg-zinc-800 lg:px-20 px-4">
+      <div class="HeaderWeb h-[92px] lg:max-w-lg md:max-w-md w-full justify-between bg-zinc-800 flex items-center">
+        <div class="Categories gap-2 text-white md:text-lg text-xs font-medium leading-tight flex items-center">
+          <img src="icons/Categories.svg" />Categories
+        </div>
+
+        <div class="TopSelling text-white md:text-lg text-xs font-medium leading-tight">Top selling</div>
+
+        <div class="Offers text-white md:text-lg text-xs font-medium leading-tight">Offers</div>
+
+        <div class="Grocery text-stone-50 md:text-lg text-xs font-medium leading-tight">Grocery</div>
+      </div>
+    </section>
 
     <!--Top footer-->
-    <div class="Frame27529 w-full h-[299px] p-3.5 bg-zinc-900 justify-center items-center gap-28 inline-flex">
-      <div class="Frame27533 h-[199px] justify-center items-start gap-28 flex">
-        <div class="Frame27746 w-[620px] flex-col justify-center items-start gap-2.5 inline-flex">
-          <div class="Frame27528 w-[277px] flex-col justify-center items-start gap-2 flex">
-            <img class="White w-[151px] h-[31.63px]" src="img\Logo.png" />
-            <div class="Frame27542 flex-col justify-start items-start gap-5 flex">
-              <div class="Frame27527 self-stretch h-[75.63px] flex-col justify-start items-start gap-2 flex">
-                <div class="Logo p-1"></div>
-                <div class="Frame27520 p-1 justify-center items-center gap-2.5 inline-flex">
-                  <div class="FindUsOn text-right text-neutral-50 text-sm font-normal  leading-tight">Find us on</div>
-                </div>
-              </div>
-              <div class="SocialMediaIcon w-[277px] h-[32px] justify-start items-center inline-flex">
-                <div class="Linkedin3">
-                  <img src="icons/linkedin.svg" alt="">
-                </div>
-                <div class="SquareFacebook3">
-                  <img src="icons/square-facebook 3.svg" alt="">
-                </div>
-                <div class="SquareTwitter3">
-                  <img src="icons/square-twitter 3.svg"  alt="">
-                </div>
-                <div class="SquareInstagram3">
-                  <img src="icons/square-instagram 3.svg"  alt="">
-                </div>
-                <div class="Tiktok4">
-                  <img src="icons/tiktok 4.svg"  alt="">
-                </div>
-              </div>              
-            </div>
-          </div>
-        </div>
-        <div class="Frame27526 justify-start items-start gap-7 flex">
-          <div class="AboutCompany flex-col justify-start items-start gap-1 inline-flex">
-            <div class="AboutCompany p-1 justify-center items-center gap-2.5 inline-flex">
-              <div class="Text text-white text-sm font-medium  leading-tight">Sam Vally </div>
-            </div>
-            <div class="Frame27521 flex-col justify-start items-start gap-1 flex">
-              <div class="AboutUs p-1 justify-center items-center gap-2.5 inline-flex">
-                <div class="Text text-white text-xs font-normal  leading-none">About us</div>
-              </div>
-              <div class="BeWithUs p-1 justify-center items-center gap-2.5 inline-flex">
-                <div class="Text text-white text-xs font-normal  leading-none">Fashionista &<br/>Bloggers </div>
-              </div>
-              <div class="Careers p-1 justify-center items-center gap-2.5 inline-flex">
-                <div class="Text text-white text-xs font-normal  leading-none">Careers</div>
+    <section>
+      <div
+        class="w-full lg:flex-row lg:py-8 lg:justify-around lg:items-start p-3.5 bg-zinc-900 justify-start items-center gap-4 flex flex-col"
+      >
+        <div class="flex-col justify-center items-center gap-2 flex lg:justify-start lg:items-start">
+          <img class="White w-[151px] h-[31.63px]" src="img\Logo.png" />
+          <div class="flex-col justify-start items-start gap-5 flex">
+            <div class="self-stretch h-[75.63px] flex-col justify-start items-start gap-2 lg:flex hidden">
+              <div class="Logo p-1"></div>
+              <div class="p-1 justify-center items-center gap-2.5 inline-flex">
+                <div class="FindUsOn text-right text-neutral-50 text-sm font-normal leading-tight">Find us on</div>
               </div>
             </div>
-          </div>
-          <div class="CustomerService flex-col justify-start items-start gap-1 inline-flex">
-            <div class="CustomerService p-1 justify-center items-center gap-2.5 inline-flex">
-              <div class="Text text-white text-sm font-medium  leading-tight">Customer Care</div>
-            </div>
-            <div class="Frame27522 flex-col justify-start items-start gap-1 flex">
-              <div class="HelpCenter p-1 justify-center items-center gap-2.5 inline-flex">
-                <div class="Text text-white text-xs font-normal  leading-none">Policy and privacy </div>
+            <div class="SocialMediaIcon justify-start items-center inline-flex">
+              <div class="Linkedin3">
+                <img src="icons/linkedin.svg" alt="" />
               </div>
-              <div class="SupportViaEmail p-1 justify-center items-center gap-2.5 inline-flex">
-                <div class="Text text-white text-xs font-normal  leading-none">Terms and conditions</div>
+              <div class="SquareFacebook3">
+                <img src="icons/square-facebook 3.svg" alt="" />
               </div>
-              <div class="SupportViaMobile p-1 justify-center items-center gap-2.5 inline-flex">
-                <div class="Text text-white text-xs font-normal  leading-none">FAQs</div>
+              <div class="SquareTwitter3">
+                <img src="icons/square-twitter 3.svg" alt="" />
               </div>
-            </div>
-          </div>
-          <div class="Services flex-col justify-start items-start gap-1 inline-flex">
-            <div class="Services p-1 justify-center items-center gap-2.5 inline-flex">
-              <div class="Text text-white text-sm font-medium  leading-tight">For Business</div>
-            </div>
-            <div class="Frame27523 flex-col justify-start items-start gap-1 flex">
-              <div class="Grocery w-[99px] p-1 bg-white rounded-2xl justify-center items-center gap-2.5 inline-flex">
-                <div class="Text text-zinc-900 text-xs font-normal  leading-none">Sell with sam</div>
+              <div class="SquareInstagram3">
+                <img src="icons/square-instagram 3.svg" alt="" />
               </div>
-              <div class="SendAndReceive p-1 justify-center items-center gap-2.5 inline-flex">
-                <div class="Text text-white text-xs font-normal  leading-none">How it works?</div>
-              </div>
-              <div class="Cards p-1 justify-center items-center gap-2.5 inline-flex">
-                <div class="Text text-white text-xs font-normal  leading-none">Business login</div>
+              <div class="Tiktok4">
+                <img src="icons/tiktok 4.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
+        <div class="justify-start items-start gap-7 flex flex-wrap px-9">
+          <div class="flex-col justify-start items-start gap-4 flex">
+            <div class="Text text-white text-sm font-medium leading-tight">Sam Vally</div>
+            <div class="Text text-white text-xs font-normal leading-none">About us</div>
+            <div class="Text text-white text-xs font-normal leading-none">Fashionista & Bloggers</div>
+            <div class="Text text-white text-xs font-normal leading-none">Careers</div>
+          </div>
+          <div class="flex-col justify-start items-start gap-4 flex">
+            <div class="Text text-white text-sm font-medium leading-tight">Customer Care</div>
 
-<!--bottom footer-->
-<div class="Frame27532 w-full h-[52px] px-3.5 bg-zinc-800 flex-col justify-center items-center gap-[35px] inline-flex">
-  <div class="Frame27890 justify-start items-start gap-[151px] inline-flex">
-    <div class="Frame10027 p-1 justify-start items-end gap-[11px] flex">
-      <div class="Copyright text-center text-neutral-50 text-xs font-normal leading-none">Copyright © 2023 Sam Valley Ltd</div>
-    </div>
-    <div class="Frame27889 justify-start items-center gap-[19px] flex">
-      <div class="Frame flex-col justify-start items-start  inline-flex">
-        <div class="image-container">
-          <img src="img\media\visa.svg" alt="" style="width: 58px; height: 30px;">
+            <div class="Text text-white text-xs font-normal leading-none">Policy and privacy</div>
+
+            <div class="Text text-white text-xs font-normal leading-none">Terms and conditions</div>
+
+            <div class="Text text-white text-xs font-normal leading-none">FAQs</div>
+          </div>
+          <div class="flex-col justify-item-start items-start gap-4 flex">
+            <div class="Text text-white text-sm font-medium leading-tight">For Business</div>
+
+            <div class="Text text-zinc-900 text-xs font-normal leading-none bg-white rounded-2xl p-2 px-2">Sell with sam</div>
+
+            <div class="Text text-white text-xs font-normal leading-none">How it works?</div>
+
+            <div class="Text text-white text-xs font-normal leading-none">Business login</div>
+          </div>
         </div>
       </div>
-      <div class="Frame flex-col justify-start items-start  inline-flex">
-        <div class="image-container">
-          <img src="img\media\master.svg" alt="" style="width: 58px; height: 30px;">
-          
+    </section>
+
+    <section>
+      <!--bottom footer-->
+      <div class="w-full lg:flex-row p-2 bg-zinc-800 flex-col justify-center items-center gap-x-[151px] flex gap-y-3">
+        <div class="Copyright text-center text-neutral-50 text-xs font-normal leading-none">Copyright © 2023 Sam Valley Ltd</div>
+        <div class="justify-start items-center gap-[19px] flex">
+          <img src="img\media\visa.svg" alt="" class="w-[58px] h-[21px] lg:h-[30px]" />
+
+          <img src="img\media\master.svg" alt="" class="w-[58px] h-[21px] lg:h-[30px]" />
+
+          <img src="img\media\mada.svg" alt="" class="w-[58px] h-[21px] lg:h-[30px]" />
         </div>
       </div>
-      <div class="Frame flex-col justify-start items-start inline-flex">
-        <div class="image-container">
-          <img src="img\media\mada.svg" alt="" style="width: 58px; height: 30px;">
-        </div>
-      </div>
-      
-    </div>
-    
-  </div>
-</div>
-      
-<script src="script.js"></script>
-</body>
+    </section>
+  </body>
 </html>
