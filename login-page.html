@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>SamvalleyEN</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body dir="">
+    <!--Top header-->
+    <section id="top-header" class="bg-zinc-900">
+      <div class="Header w-screen lg:h-[130px] md:h-[103px] md:flex hidden p-5 justify-between items-center lg:px-16">
+        <img class="White" src="img\Logo.png" />
+        <!--search bar-->
+        <div class="SearchBar max-w-lg grow bg-white rounded-[28px] border border-zinc-900">
+          <div class="flex items-center">
+            <span class="material-symbols-outlined p-1" style="color: #828282"> search </span>
+            <input
+              type="text"
+              placeholder="What are you looking for?"
+              class="h-12 text-zinc-700 text-base font-normal leading-normal w-full rounded-[100px] border-none focus:outline-none"
+            />
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <a href="indexAr.html" class="flex text-white gap-2">
+            <div class="flex items-center">EN</div>
+            <span class="material-symbols-outlined" style="color: white">language</span>
+          </a>
+          <span class="material-symbols-outlined" style="color: white">shopping_bag</span>
+          <span class="material-symbols-outlined" style="color: white">person</span>
+        </div>
+      </div>
+
+      <!--Mobile header-->
+      <div class="flex h-[56px] items-center justify-between px-2 md:hidden">
+        <div class="grow flex text-white gap-2 items-center">
+          <span class="material-symbols-outlined p-3"> menu </span>
+          <img class="White w-[94px] h-[21px]" src="img\Logo.png" />
+        </div>
+        <div class="flex items-center bg-white rounded-[28px] border w-[55px] h-[29px]">
+          <span class="material-symbols-outlined p-3" style="color: #1c1917"> search </span>
+          <input
+            type="text"
+            class="h-12 text-zinc-700 text-base bg-transparent font-normal leading-normal w-full rounded-[100px] border-none focus:outline-none"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Catagories header-->
+    <section class="bg-zinc-800 lg:px-20 px-4">
+      <div class="HeaderWeb h-[92px] lg:max-w-lg md:max-w-md w-full justify-between bg-zinc-800 flex items-center">
+        <div class="Categories gap-2 text-white md:text-lg text-xs font-medium leading-tight flex items-center">
+          <img src="icons/Categories.svg" />Categories
+        </div>
+
+        <div class="TopSelling text-white md:text-lg text-xs font-medium leading-tight">Top selling</div>
+
+        <div class="Offers text-white md:text-lg text-xs font-medium leading-tight">Offers</div>
+
+        <div class="Grocery text-stone-50 md:text-lg text-xs font-medium leading-tight">Grocery</div>
+      </div>
+    </section>
+
+    <!--Login box-->
+    <section class="flex flex-col justify-center items-center content-center flex">
+      <div class="w-4/5 sm:3/4 bg-white shadow">
+        <div class="Logo flex flex-col items-center pt-14">
+          <img class="display:block w-52 h-[76px]" src="img/Black-logo.png" />
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5">
+          <div class="WelcomeBack text-center text-black text-5xl font-normal">Welcome back</div>
+          <div class="text-center text-black text-3xl font-normal leading-tight">Log in to enjoy a unique shopping experience.</div>
+        </div>
+
+        <div class="Info flex flex-col p-24">
+          <div class="text-black text-3xl font-light ">
+            Mobile number or Email address
+          </div>
+
+          <div class=" h-[85px] bg-white shadow-inner border border-stone-300 flex items-center">
+            
+              <span class="material-symbols-outlined larger px-6 " style="font-size: 34px; color: #BFBFBF"> mail </span>
+            
+              <input class="w-full focus:outline-none m-2"></input>
+          </div>
+
+          <div class="Password  text-black text-3xl font-light ">Password</div>
+          
+          <div class=" h-[85px] bg-white shadow-inner border border-stone-300 flex items-center">
+            
+              <span class="material-symbols-outlined larger px-6 " style="font-size: 34px; color: #BFBFBF"> lock </span>
+           
+              <input class="w-full focus:outline-none m-2"></input>
+              <span class="material-symbols-outlined larger px-6 " style="font-size: 34px; color: #000000"> visibility_off </span>
+          </div>
+
+          <div class="ForgotYourPassword  text-right text-blue-700 text-3xl font-normal ">
+            Forgot your password?
+          </div>
+          <button class="LoginButton h-[130px] bg-black rounded-[50px] text-white text-5xl font-semibold">Login</button>
+        </div>
+
+        <div class="Or flex flex-col">
+
+          <div class="OrLine h-[35px] relative">
+            <div class="Line12 w-full h-[0px] left-0 top-[18px] absolute border border-stone-300"></div>
+            <div class="Or left-[524px] top-0 absolute text-center text-black text-3xl font-medium">Or</div>
+            <div class="Line13 w-full h-[0px] left-0 top-[18px] absolute border border-stone-300"></div>
+          </div>
+
+
+          <div class=" h-[212px] flex-col justify-start items-start gap-8 inline-flex">
+            <div class=" flex-col justify-center items-center gap-2.5 flex">
+                <div class=" justify-start items-start gap-[30px] inline-flex">
+                  <button class="ContinueWithGoogle text-center text-black text-3xl font-normal w-[896px] h-[90px] bg-white border border-stone-300">Continue with Google</button>
+                </div>
+            </div>
+            
+            <div class=" flex-col justify-center items-center gap-2.5 flex">
+              <button class="ContinueWithFacebook text-center text-black text-3xl font-normal">Continue with Facebook</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </section>
+
+    <!--Top footer-->
+    <section>
+      <div
+        class="w-full lg:flex-row lg:py-8 lg:justify-around lg:items-start p-3.5 bg-zinc-900 justify-start items-center gap-4 flex flex-col"
+      >
+        <div class="flex-col justify-center items-center gap-2 flex lg:justify-start lg:items-start">
+          <img class="White w-[151px] h-[31.63px]" src="img\Logo.png" />
+          <div class="flex-col justify-start items-start gap-5 flex">
+            <div class="self-stretch h-[75.63px] flex-col justify-start items-start gap-2 lg:flex hidden">
+              <div class="Logo p-1"></div>
+              <div class="p-1 justify-center items-center gap-2.5 inline-flex">
+                <div class="FindUsOn text-right text-neutral-50 text-sm font-normal leading-tight">Find us on</div>
+              </div>
+            </div>
+            <div class="SocialMediaIcon justify-start items-center inline-flex">
+              <div class="Linkedin3">
+                <img src="icons/linkedin.svg" alt="" />
+              </div>
+              <div class="SquareFacebook3">
+                <img src="icons/square-facebook 3.svg" alt="" />
+              </div>
+              <div class="SquareTwitter3">
+                <img src="icons/square-twitter 3.svg" alt="" />
+              </div>
+              <div class="SquareInstagram3">
+                <img src="icons/square-instagram 3.svg" alt="" />
+              </div>
+              <div class="Tiktok4">
+                <img src="icons/tiktok 4.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="justify-start items-start gap-7 flex flex-wrap px-9">
+          <div class="flex-col justify-start items-start gap-4 flex">
+            <div class="Text text-white text-sm font-medium leading-tight">Sam Vally</div>
+            <div class="Text text-white text-xs font-normal leading-none">About us</div>
+            <div class="Text text-white text-xs font-normal leading-none">Fashionista & Bloggers</div>
+            <div class="Text text-white text-xs font-normal leading-none">Careers</div>
+          </div>
+          <div class="flex-col justify-start items-start gap-4 flex">
+            <div class="Text text-white text-sm font-medium leading-tight">Customer Care</div>
+
+            <div class="Text text-white text-xs font-normal leading-none">Policy and privacy</div>
+
+            <div class="Text text-white text-xs font-normal leading-none">Terms and conditions</div>
+
+            <div class="Text text-white text-xs font-normal leading-none">FAQs</div>
+          </div>
+          <div class="flex-col justify-item-start items-start gap-4 flex">
+            <div class="Text text-white text-sm font-medium leading-tight">For Business</div>
+
+            <div class="Text text-zinc-900 text-xs font-normal leading-none bg-white rounded-2xl p-2 px-2">Sell with sam</div>
+
+            <div class="Text text-white text-xs font-normal leading-none">How it works?</div>
+
+            <div class="Text text-white text-xs font-normal leading-none">Business login</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--bottom footer-->
+    <section>
+      <div class="w-full lg:flex-row p-2 bg-zinc-800 flex-col justify-center items-center gap-x-[151px] flex gap-y-3">
+        <div class="Copyright text-center text-neutral-50 text-xs font-normal leading-none">Copyright © 2023 Sam Valley Ltd</div>
+        <div class="justify-start items-center gap-[19px] flex">
+          <img src="img\media\visa.svg" alt="" class="w-[58px] h-[21px] lg:h-[30px]" />
+
+          <img src="img\media\master.svg" alt="" class="w-[58px] h-[21px] lg:h-[30px]" />
+
+          <img src="img\media\mada.svg" alt="" class="w-[58px] h-[21px] lg:h-[30px]" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
