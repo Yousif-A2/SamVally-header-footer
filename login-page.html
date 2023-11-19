@@ -74,68 +74,70 @@
     </section>
 
     <!--Login box-->
-    <section class="flex flex-col justify-center items-center content-center flex">
+    <section class="flex flex-col justify-center items-center content-center my-96 ">
       <div class="w-4/5 sm:3/4 bg-white shadow">
-        <div class="Logo flex flex-col items-center pt-14">
+        <div class="Logo flex flex-col items-center pt-14 py-16">
           <img class="display:block w-52 h-[76px]" src="img/Black-logo.png" />
         </div>
+
         <div class="flex flex-col justify-center items-center gap-5">
           <div class="WelcomeBack text-center text-black text-5xl font-normal">Welcome back</div>
           <div class="text-center text-black text-3xl font-normal leading-tight">Log in to enjoy a unique shopping experience.</div>
         </div>
 
         <div class="Info flex flex-col p-24">
-          <div class="text-black text-3xl font-light ">
-            Mobile number or Email address
+          <div class="text-black text-3xl font-light py-8">Mobile number or Email address</div>
+          <div class="h-[85px] bg-white shadow-inner border border-stone-300 flex items-center">
+            <span class="material-symbols-outlined larger px-6" style="font-size: 34px; color: #bfbfbf"> mail </span>
+            <input class="w-full focus:outline-none m-2" />
           </div>
 
-          <div class=" h-[85px] bg-white shadow-inner border border-stone-300 flex items-center">
-            
-              <span class="material-symbols-outlined larger px-6 " style="font-size: 34px; color: #BFBFBF"> mail </span>
-            
-              <input class="w-full focus:outline-none m-2"></input>
+          <div class="Password text-black text-3xl font-light py-8">Password</div>
+
+          <div class="h-[85px] bg-white shadow-inner border border-stone-300 flex items-center">
+            <span class="material-symbols-outlined larger px-6" style="font-size: 34px; color: #bfbfbf"> lock </span>
+
+            <input class="w-full focus:outline-none m-2" />
+            <span class="material-symbols-outlined larger px-6" style="font-size: 34px; color: #000000"> visibility_off </span>
           </div>
 
-          <div class="Password  text-black text-3xl font-light ">Password</div>
+          <div class="ForgotYourPassword text-right text-blue-700 text-3xl font-normal p-5">Forgot your password?</div>
           
-          <div class=" h-[85px] bg-white shadow-inner border border-stone-300 flex items-center">
-            
-              <span class="material-symbols-outlined larger px-6 " style="font-size: 34px; color: #BFBFBF"> lock </span>
-           
-              <input class="w-full focus:outline-none m-2"></input>
-              <span class="material-symbols-outlined larger px-6 " style="font-size: 34px; color: #000000"> visibility_off </span>
-          </div>
-
-          <div class="ForgotYourPassword  text-right text-blue-700 text-3xl font-normal ">
-            Forgot your password?
-          </div>
-          <button class="LoginButton h-[130px] bg-black rounded-[50px] text-white text-5xl font-semibold">Login</button>
+            <button class="LoginButton my-16 h-[130px] bg-black rounded-[50px] text-white text-5xl font-semibold">Login</button>
+          
         </div>
 
         <div class="Or flex flex-col">
 
-          <div class="OrLine h-[35px] relative">
-            <div class="Line12 w-full h-[0px] left-0 top-[18px] absolute border border-stone-300"></div>
-            <div class="Or left-[524px] top-0 absolute text-center text-black text-3xl font-medium">Or</div>
-            <div class="Line13 w-full h-[0px] left-0 top-[18px] absolute border border-stone-300"></div>
+          <div class="OrLine h-[35px] flex items-center py-16">
+            <div class="Line13 w-[503px] h-[0px]  border border-stone-300 flex-col"></div>
+            <div class="Or p-6 top-0   text-black text-3xl font-medium flex-col">Or</div>
+            <div class="Line12 w-[500px] h-[0px] border border-stone-300 flex-col"></div>
           </div>
 
+          <div class="flex flex-col items-center gap-8 px-24">
+            <button
+              class="ContinueWithGoogle justify-center flex items-center text-black text-3xl font-normal w-full h-[90px] bg-white border border-stone-300"
+            >
+              <img class="p-7" src="icons/google login.svg" alt="" />
+              Continue with Google
+            </button>
 
-          <div class=" h-[212px] flex-col justify-start items-start gap-8 inline-flex">
-            <div class=" flex-col justify-center items-center gap-2.5 flex">
-                <div class=" justify-start items-start gap-[30px] inline-flex">
-                  <button class="ContinueWithGoogle text-center text-black text-3xl font-normal w-[896px] h-[90px] bg-white border border-stone-300">Continue with Google</button>
-                </div>
-            </div>
-            
-            <div class=" flex-col justify-center items-center gap-2.5 flex">
-              <button class="ContinueWithFacebook text-center text-black text-3xl font-normal">Continue with Facebook</button>
-            </div>
+            <button
+              class="ContinueWithGoogle justify-center flex items-center text-black text-3xl font-normal w-full h-[90px] bg-white border border-stone-300"
+            >
+              <img class="p-7" src="icons/Facebook login.svg" alt="" />
+              Continue with Facebook
+            </button>
           </div>
         </div>
-      </div>
 
-    </div>
+        <div class="CreateAccount h-[35px] justify-center items-center gap-2.5 flex py-16 ">
+            <span class="text-black text-3xl font-medium">Do you not have an account? </span
+            ><span class="text-blue-700 text-3xl font-medium">create account</span>
+        </div>
+
+      </div>
     </section>
 
     <!--Top footer-->
